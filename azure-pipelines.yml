@@ -55,8 +55,6 @@ steps:
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
 
-- task: RunDotnet@1
-  displayName: 'Run project on server'
 - script: 'start cmd.exe /c dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web'
   displayName: 'Open new Session to run dotnet run'
 
