@@ -1,9 +1,7 @@
 trigger: 'none'
 
-pool:
-  vmImage: 'ubuntu-20.04'
-  demands:
-  - npm
+pool:  
+   name: TP-SelfHosted
 
 variables:
   buildConfiguration: 'Release'
