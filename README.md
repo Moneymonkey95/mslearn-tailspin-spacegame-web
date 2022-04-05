@@ -1,4 +1,10 @@
+git add .
+git commit -m "readme modification"
+git push
 
+dotnet build --configuration Release
+dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
+dotnet test --configuration Release --no-build
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
