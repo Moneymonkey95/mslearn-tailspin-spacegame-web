@@ -64,10 +64,11 @@ steps:
   condition: succeeded()
 
 - task: AzureRmWebAppDeployment@4
+  displayName: 'Run the poject in a MS Azure App Service'
   inputs:
     ConnectionType: 'AzureRM'
     azureSubscription: 'Azure para estudiantes(1)(036d73bd-2882-48e8-818f-c698371f5711)'
     appType: 'webAppLinux'
-    WebAppName: 'mslearn-tailspin-spacegame-web-AppService'
+    WebAppName: 'AppService-mslearn-tailspin-spacegame-web'
     packageForLinux: '$(Build.ArtifactStagingDirectory)/$(buildConfiguration)/**/Tailspin.SpaceGame.Web.zip'
     RuntimeStack: 'DOTNETCORE|5.0'
